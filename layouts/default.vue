@@ -91,7 +91,7 @@ export default {
   },
   computed: {
     copyright() {
-      return `Copyright &copy; ${new Date().getFullYear()} jefrydco`;
+      return `Copyright &copy; ${new Date().getFullYear()} gamebreak`;
     }
   }
 };
