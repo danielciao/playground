@@ -33,14 +33,14 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/browserconfig',
-    '@nuxtjs/dotenv',
+    '@nuxtjs/dotenv'
     // [
     //   '@nuxtjs/google-analytics',
     //   {
     //     id: process.env.ANALYTICS_ID
     //   }
     // ],
-    '@nuxtjs/pwa'
+    // '@nuxtjs/pwa'
   ],
 
   /**
