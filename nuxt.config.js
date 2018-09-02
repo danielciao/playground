@@ -101,10 +101,11 @@ module.exports = {
           exclude: /(node_modules)/
         });
       }
+
       if (isServer) {
         config.externals = [
           nodeExternals({
-            whitelist: [/^vuetify/]
+            whitelist: [/^(vuetify|vue-particles)/]
           })
         ];
       }

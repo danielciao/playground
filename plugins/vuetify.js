@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import VueParticles from 'vue-particles';
 import {
   Vuetify,
   VApp,
@@ -12,6 +13,7 @@ import {
   VToolbar
 } from 'vuetify';
 
+Vue.use(VueParticles);
 Vue.use(Vuetify, {
   components: {
     VApp,
