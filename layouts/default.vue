@@ -26,7 +26,11 @@
       v-toolbar-side-icon(@click="drawer = !drawer") 
       v-toolbar-title(v-text="title")
     v-content
-      v-container
+      v-container(
+        id="backdrop"
+        fluid
+        fill-height
+      )
         nuxt
     v-footer.pa-3(
       fixed
@@ -41,7 +45,10 @@ export default {
   data() {
     return {
       drawer: false,
-      items: [{ icon: 'apps', title: 'Welcome', to: '/' }],
+      items: [
+        { icon: 'apps', title: 'Welcome', to: '/' },
+        { icon: 'games', title: 'Quiz', to: '/quiz-game' }
+      ],
       title: 'GameBreak'
     };
   },
@@ -52,3 +59,23 @@ export default {
   }
 };
 </script>
+
+<style lang="sass">
+#backdrop
+  padding: 0
+  background: linear-gradient(-45deg, #ee7752, #e73C7e, #23a6d5, #23d5ab)
+  background-size: 400% 400%
+  animation: gradient 15s ease infinite
+
+#particles-js
+  width: 100%
+  height: 100%
+
+@keyframes gradient
+  0% 
+    background-position: 0 50%
+  50% 
+    background-position: 100% 50%
+  100%
+    background-position: 0 50%
+</style>
