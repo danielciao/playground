@@ -1,9 +1,9 @@
 <template lang="pug">
   vue-particles(
     color="#fff"
+    shapeType="circle"
     :particleOpacity="0.5"
     :particlesNumber="50"
-    shapeType="circle"
     :particleSize="50"
     :lineLinked="false"
     :moveSpeed="2"

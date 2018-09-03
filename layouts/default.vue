@@ -47,7 +47,7 @@ export default {
       drawer: false,
       items: [
         { icon: 'apps', title: 'Welcome', to: '/' },
-        { icon: 'games', title: 'Quiz', to: '/quiz-game' }
+        { icon: 'games', title: 'Quiz', to: '/quiz' }
       ],
       title: 'GameBreak'
     };

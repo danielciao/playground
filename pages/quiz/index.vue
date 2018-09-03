@@ -5,7 +5,7 @@
     align-center
   )  
     v-btn(
-      class="test"
+      @click="getQuestions()"
       color="purple"
       fab
       large
@@ -21,6 +21,21 @@
       :clickEffect="false"
     )
 </template>
+
+<script>
+export default {
+  methods: {
+    async getQuestions() {
+      try {
+        await this.$store.dispatch('quiz/GET_QUESTIONS');
+        this.$router.push({ path: '/quiz/game' });
+      } catch (err) {
+        console.error({ err }); //eslint-disable-line no-console
+      }
+    }
+  }
+};
+</script>
 
 <style lang="sass" scoped>
 .center-contents > *
