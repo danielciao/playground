@@ -15,7 +15,6 @@
         large
       ) play_arrow
     vue-particles(
-      class="test"
       color="#fff"
       :hoverEffect="false"
       :clickEffect="false"

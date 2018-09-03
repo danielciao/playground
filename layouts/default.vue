@@ -27,10 +27,9 @@
       v-toolbar-title(v-text="title")
     v-content
       v-container(
-        id="backdrop"
         fluid
         fill-height
-      )
+      ).backdrop
         nuxt
     v-footer.pa-3(
       fixed
@@ -61,7 +60,7 @@ export default {
 </script>
 
 <style lang="sass">
-#backdrop
+.backdrop
   padding: 0
   background: linear-gradient(-45deg, #ee7752, #e73C7e, #23a6d5, #23d5ab)
   background-size: 400% 400%
