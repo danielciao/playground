@@ -9,6 +9,7 @@ import {
   VList,
   VBtn,
   VIcon,
+  VImg,
   VGrid,
   VDivider,
   VToolbar
@@ -24,6 +25,7 @@ Vue.use(Vuetify, {
     VList,
     VBtn,
     VIcon,
+    VImg,
     VGrid,
     VDivider,
     VToolbar

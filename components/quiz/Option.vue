@@ -4,6 +4,7 @@ v-btn(
   :color="color"
   large
   block
+  dark
 ).option
   span.id {{id}}
   span.text {{htmlDecode(text)}}
@@ -18,16 +19,15 @@ export default {
   methods: {
     htmlDecode,
     onClick() {
-      this.$emit('click');
+      this.$emit('click', this.id);
     }
   }
 };
 </script>
 
 <style lang="sass">
-.option.option
-  height: auto
-  color: white
+.option
+  height: 100%
   padding: 0
   text-transform: none
 
