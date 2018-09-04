@@ -25,23 +25,21 @@ export default {
 };
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .option
   height: 100%
   padding: 0
   text-transform: none
 
-  .v-btn__content
-    justify-content: flex-start
+  .id
+    display: inline-block
+    font-size: 36px
+    min-width: 80px
+    
+  .text
+    width: 100%
+    padding: 10px 10px 10px 0
+    font-size: 20px
+    text-align: left
     white-space: normal
-
-    .id
-      display: inline-block
-      font-size: 36px
-      min-width: 80px
-      
-    .text
-      text-align: left
-      padding: 10px 10px 10px 0
-      font-size: 20px
 </style>
