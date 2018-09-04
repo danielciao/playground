@@ -34,7 +34,7 @@ export default {
   computed: {
     score() {
       const { correctAnswers, incorrectAnswers } = this.$store.state.quiz.results;
-      return `Your Score: ${correctAnswers} / ${correctAnswers + incorrectAnswers}`;
+      return `Your Score: ${correctAnswers}/${correctAnswers + incorrectAnswers}`;
     }
   },
 
