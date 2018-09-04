@@ -15,7 +15,20 @@ import { htmlDecode } from '../../lib/formatter';
 
 export default {
   name: 'quiz-option',
-  props: ['id', 'text', 'color'],
+  props: {
+    id: {
+      type: String,
+      required: true
+    },
+    text: {
+      type: String,
+      required: true
+    },
+    color: {
+      type: String,
+      required: true
+    }
+  },
   methods: {
     htmlDecode,
     onClick() {

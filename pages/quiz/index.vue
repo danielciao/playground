@@ -3,17 +3,13 @@
     class="center-contents"
     justify-center 
     align-center
-  )  
-    v-btn(
+  ) 
+    quiz-cta(
       @click="getQuestions()"
+      heading="Start Quiz!"
       color="purple"
-      fab
-      large
-      dark
+      icon="play_arrow"
     )
-      v-icon(
-        large
-      ) play_arrow
     vue-particles(
       color="#fff"
       :hoverEffect="false"
@@ -40,6 +36,6 @@ export default {
 .center-contents > *
   position: absolute
 
-.center-contents > button
+.center-contents .start-screen
   z-index: 2;
 </style>

@@ -9,34 +9,13 @@
       @submit="onSubmit"
       :question="question"
     )
-    v-flex(
+    quiz-cta(
       v-else-if="$store.state.quiz.ended"
-      xs12 
-      sm6
+      @click="replay()"
+      :heading="score"
+      color="orange"
+      icon="replay"
     )
-      v-card
-        v-img(
-          src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
-          aspect-ratio="2.75"
-        )
-        v-card-title(
-          primary-title
-        )
-          h2 Your Score: {{score}}
-
-        v-card-actions
-          v-layout(justify-center)
-            v-btn(
-              @click="replay()"
-              color="orange"
-              fab
-              large
-              dark
-              depressed
-            )
-              v-icon(
-                large
-              ) replay
 </template>
 
 <script>
@@ -55,7 +34,7 @@ export default {
   computed: {
     score() {
       const { correctAnswers, incorrectAnswers } = this.$store.state.quiz.results;
-      return `${correctAnswers} / ${correctAnswers + incorrectAnswers}`;
+      return `Your Score: ${correctAnswers} / ${correctAnswers + incorrectAnswers}`;
     }
   },
 
